@@ -29,7 +29,6 @@ const options = {
 
       return (
           <h3 className="text-md font-semibold mb-4">{domToReact(domNode.children)}</h3>
-  
       )
     }
     if (domNode.name === "p") {
