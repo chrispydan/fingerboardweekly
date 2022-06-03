@@ -18,7 +18,7 @@ const PostCard = ({ post }) => (
       />
     </div> */}
     <div className="relative overflow-hidden shadow-md pb-96 mb-6">
-      <img src={post.coverImage.url} alt="" className="object-top absolute h-96 w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
+      <img src={post.coverImage.url} alt="" className="absolute h-96 w-full object-cover  shadow-lg" />
     </div>
 
     <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-teal-600 text-3xl font-semibold">
@@ -47,6 +47,7 @@ const PostCard = ({ post }) => (
     <p className="text-center text-lg text-gray-700 font-normal px-4 lg:px-20 mb-8">
       {post.excerpt}
     </p>
+    
     <div className="text-center">
       <Link href={`/post/${post.slug}`}>
         <span className="transition duration-500 ease transform hover:-translate-y-1 inline-block bg-teal-600 text-lg font-medium rounded-full text-white px-8 py-3 cursor-pointer">Continue Reading</span>

@@ -3,7 +3,8 @@ import parse from "html-react-parser";
 import { domToReact } from 'html-react-parser';
 import moment from 'moment';
 import Link from 'next/link';
-import { CopyBlock, dracula } from 'react-code-blocks';
+import YoutubeEmbed from "./YoutubeEmbed";
+
 
 const options = {
   replace: (domNode) => {
@@ -38,11 +39,11 @@ const options = {
   
       )
     }
-        if (domNode.name === "li") {
+    if (domNode.name === "li") {
 
       return (
           <li className="mb-4">{domToReact(domNode.children)}</li>
-  
+
       )
     }
     
@@ -54,7 +55,7 @@ const PostDetail = ({ post }) => (
     <>
       <div className="bg-white shadow-md lg:p-8 pb-12 mb-8">
         <div className="relative overflow-hidden shadow-md mb-6">
-          <img src={post.coverImage.url} alt="" className="object-top h-full w-full object-cover  shadow-lg rounded-t-lg lg:rounded-lg" />
+          <img src={post.coverImage.url} alt="" className="h-full w-full object-cover  shadow-lg" />
         </div>
         <div className="px-4 lg:px-0">
           <div className="flex items-center mb-8 w-full">
