@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+
 
 html,
 body {
@@ -87,4 +90,8 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1, h2, h3 {
+  font-family: 'Permanent Marker', cursive !important;
 }
