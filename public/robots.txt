@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://fingerboardweekly.com
+
+# Sitemaps
+Sitemap: https://fingerboardweekly.com/sitemap.xml
