@@ -31,10 +31,9 @@ export default function Home({ posts }: {posts: any[]}) {
         </div>
       </div>
     </div>
-  );
+  ); 
 }
 
-// Fetch data at build time
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];
   return {
