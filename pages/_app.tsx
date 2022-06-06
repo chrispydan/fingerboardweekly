@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react'
 
 
 function MyApp({ Component, pageProps }: AppProps) {
+  
   return (
     <React.Fragment>
   <Script
