@@ -20,12 +20,12 @@ const PostDetails = ({ post }) => {
           <div className="col-span-1 lg:col-span-8">
             <PostDetail post={post} />
             <Head>
-      <title>{post.title}</title>
-      <meta name="description" content={post.excerpt} />
-      <meta name="og:title" content={post.title} />
-      <meta name="keywords" content={post.tags} ></meta>
-      <meta name="author" content={post.author} ></meta>
-    </Head>
+              <title>{post.title}</title>
+              <meta name="description" content={post.excerpt} />
+              <meta name="og:title" content={post.title} />
+              <meta name="keywords" content={post.tags} ></meta>
+              <meta name="author" content={post.author} ></meta>
+            </Head>
             <Author author={post.author} />
             <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />
             <CommentsForm slug={post.slug} />
