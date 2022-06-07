@@ -27,9 +27,10 @@ const PostDetails = ({ post }) => {
               <meta name="author" content={post.author} ></meta>
             </Head>
             <Author author={post.author} />
-            <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />
             <CommentsForm slug={post.slug} />
             <Comments slug={post.slug} />
+            <AdjacentPosts slug={post.slug} createdAt={post.createdAt} />
+            
           </div>
           <div className="col-span-1 lg:col-span-4">
             <div className="relative lg:sticky top-8">

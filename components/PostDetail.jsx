@@ -3,6 +3,8 @@ import parse from "html-react-parser";
 import { domToReact } from 'html-react-parser';
 import moment from 'moment';
 import Link from 'next/link';
+import { grpahCMSImageLoader } from '../util';
+import Image from 'next/image';
 
 
 
@@ -53,16 +55,24 @@ const options = {
 const PostDetail = ({ post }) => (
     <>
       <div className="bg-white shadow-md lg:p-8 pb-12 mb-8">
-        <div className="relative overflow-hidden shadow-md mb-6">
-          <img src={post.coverImage.url} alt="" className="h-full w-full object-cover  shadow-lg" />
+        <div className="relative overflow-hidden shadow-md pb-96 mb-6">
+          <Image
+          unoptimized
+            priority
+            loader={grpahCMSImageLoader}
+            src={post.coverImage.url}
+            layout="fill"
+            alt={post.title}
+            className="absolute h-96 w-full object-cover" />
         </div>
         <div className="px-4 lg:px-0">
           <div className="flex items-center mb-8 w-full">
             <div className="hidden md:flex items-center justify-center lg:mb-0 lg:w-auto mr-8 items-center">
-              <img
+              <Image
+                loader={grpahCMSImageLoader}
                 alt={post.author.name}
-                height="30px"
-                width="30px"
+                height={30}
+                width={30}
                 className="align-middle rounded-full"
                 src={post.author.picture.url}
               />

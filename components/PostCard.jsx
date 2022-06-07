@@ -19,7 +19,13 @@ const PostCard = ({ post }) => (
       />
     </div> */}
     <div className="relative overflow-hidden shadow-md pb-96 mb-6">
-      <img src={post.coverImage.url} alt="" className="absolute h-96 w-full object-cover  shadow-lg" />
+    <Image
+        unoptimized
+        loader={grpahCMSImageLoader}
+        src={post.coverImage.url}
+        layout="fill"
+        alt={post.title}
+        className="absolute h-96 w-full object-cover  shadow-lg" />
     </div>
 
     <h1 className="transition duration-700 text-center mb-8 cursor-pointer hover:text-teal-600 text-3xl font-semibold">
@@ -28,11 +34,11 @@ const PostCard = ({ post }) => (
     <div className="block lg:flex text-center items-center justify-center mb-8 w-full">
       <div className="flex items-center justify-center mb-4 lg:mb-0 w-full lg:w-auto mr-8 items-center">
         <Image
-          
+          unoptimized
           loader={grpahCMSImageLoader}
           alt={post.author.name}
-          height="30px"
-          width="30px"
+          height={30}
+          width={30}
           className="align-middle rounded-full"
           src={post.author.picture.url}
         />
