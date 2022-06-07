@@ -11,10 +11,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   
   return (
     <React.Fragment>
-      <script strategy="lazyOnload" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6328547113076320"
-     crossorigin="anonymous"></script>
-  <Script
-        strategy="lazyOnload"
+      
+  <Script strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
       <Script strategy="lazyOnload">
