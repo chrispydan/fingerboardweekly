@@ -6,8 +6,7 @@ import React, { useEffect, useState } from 'react'
 
 export default function Home({ posts }: {posts: any[]}) {
   return (
-    
-    
+     
     <div className="container mx-auto px-10 mb-8">
       <Head>
       <title>Fingerboard Weekly</title>
