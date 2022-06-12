@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from '../components';
 import Script from 'next/script';
-
+import { ThemeProvider } from 'next-themes'
 import '../styles/globals.scss'
 import type { AppProps } from 'next/app'
 import { useEffect, useState } from 'react'
@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react'
 function MyApp({ Component, pageProps }: AppProps) {
   
   return (
+    <ThemeProvider enableSystem={true} attribute="class">
     <React.Fragment>
       
   <Script strategy="lazyOnload"
@@ -29,6 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <Component {...pageProps} />
     </Layout>
     </React.Fragment>
+    </ThemeProvider>
   )
 }
 
