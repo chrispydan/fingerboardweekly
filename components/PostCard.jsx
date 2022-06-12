@@ -20,7 +20,7 @@ const PostCard = ({ post }) => (
     </div> */}
     <div className="relative overflow-hidden shadow-md pb-96 mb-6">
     <Image
-        unoptimized
+    priority
         loader={grpahCMSImageLoader}
         src={post.coverImage.url}
         layout="fill"
