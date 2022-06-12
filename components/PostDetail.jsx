@@ -54,7 +54,7 @@ const options = {
 
 const PostDetail = ({ post }) => (
     <>
-      <div className="dark:bg-black bg-white shadow-md lg:p-8 pb-12 mb-8 ">
+      <div className="dark:bg-slate-900 bg-white shadow-md lg:p-8 pb-12 mb-8 ">
         <div className="relative overflow-hidden shadow-md pb-96 mb-6">
           <Image
           unoptimized
