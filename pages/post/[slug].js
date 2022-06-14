@@ -4,6 +4,7 @@ import Head from 'next/head';
 import { PostDetail, Categories, PostWidget, Author, Comments, CommentsForm, Loader } from '../../components';
 import { getPosts, getPostDetails } from '../../services';
 import { AdjacentPosts } from '../../sections';
+import { TrickGenerator } from '../../components';
 
 const PostDetails = ({ post }) => {
   const router = useRouter();
@@ -36,6 +37,7 @@ const PostDetails = ({ post }) => {
             <div className="relative lg:sticky top-8">
               <PostWidget slug={post.slug} categories={post.categories.map((category) => category.slug)} />
               <Categories />
+              <TrickGenerator />
             </div>
           </div>
         </div>

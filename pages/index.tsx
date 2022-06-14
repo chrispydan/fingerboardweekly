@@ -1,5 +1,5 @@
 import { FeaturedPosts } from '../sections/index';
-import { PostCard, Categories, PostWidget } from '../components';
+import { PostCard, Categories, PostWidget, TrickGenerator } from '../components';
 import { getPosts } from '../services';
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react'
@@ -26,6 +26,7 @@ export default function Home({ posts }: {posts: any[]}) {
           <div className="lg:sticky relative top-8">
             <PostWidget categories={undefined} slug={undefined} />
             <Categories />
+            <TrickGenerator />
           </div>
 
         </div>

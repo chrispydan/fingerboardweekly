@@ -19,7 +19,7 @@ const options = {
 				</Link>
 			)
 		}
-
+    
     if (domNode.name === "h2") {
 
       return (
@@ -84,7 +84,7 @@ const PostDetail = ({ post }) => (
               <span className="align-middle">{moment(post.createdAt).format('MMM DD, YYYY')}</span>
             </div>
           </div>
-          <h1 className="mb-8 text-3xl font-semibolddark:text-gray-100">{post.title}</h1>
+          <h1 className="hover:text-teal-600 text-teal-600 mb-8 text-3xl font-bold">{post.title}</h1>
           {parse(post.content.html, options)}
         </div>
       </div>
