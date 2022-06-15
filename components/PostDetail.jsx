@@ -84,7 +84,7 @@ const PostDetail = ({ post }) => (
               <span className="align-middle">{moment(post.createdAt).format('MMM DD, YYYY')}</span>
             </div>
           </div>
-          <h1 className="hover:text-teal-600 text-teal-600 mb-8 text-3xl font-bold">{post.title}</h1>
+          <h1 className="hover:text-teal-600 text-teal-600 dark:text-teal-400 mb-8 text-3xl font-bold">{post.title}</h1>
           {parse(post.content.html, options)}
         </div>
       </div>

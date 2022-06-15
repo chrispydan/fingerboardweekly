@@ -24,9 +24,10 @@ export default function Home({ posts }: {posts: any[]}) {
         </div>
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
+            <TrickGenerator />
             <PostWidget categories={undefined} slug={undefined} />
             <Categories />
-            <TrickGenerator />
+            
           </div>
 
         </div>

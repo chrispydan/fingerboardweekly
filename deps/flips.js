@@ -1,5 +1,4 @@
 export const flips =[
-    [""],
     ["Kickflip "],
     ["Varial Flip "],
     ["360 Flip "],
