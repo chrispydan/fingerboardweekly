@@ -34,7 +34,8 @@ const PostWidget = ({ categories, slug }) => {
               alt={post.title}
               height="60px"
               width="60px"
-              unoptimized
+              layout="intrinsic"
+              objectFit="cover"
               className="align-middle rounded-full"
               src={post.coverImage.url}
             />
