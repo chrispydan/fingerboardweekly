@@ -4,6 +4,7 @@ import { getPosts } from '../services';
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react'
 
+
 export default function Home({ posts }: {posts: any[]}) {
   return (
      
@@ -24,7 +25,7 @@ export default function Home({ posts }: {posts: any[]}) {
         </div>
         <div className="lg:col-span-4 col-span-1">
           <div className="lg:sticky relative top-8">
-            <TrickGenerator />
+            <TrickGenerator/>
             <PostWidget categories={undefined} slug={undefined} />
             <Categories />
             
@@ -42,3 +43,4 @@ export async function getStaticProps() {
     props: { posts },
   };
 }
+
