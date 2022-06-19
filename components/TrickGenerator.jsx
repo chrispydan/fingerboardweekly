@@ -5,7 +5,7 @@ import * as Rotation from '../deps/rotation'
 
 
 function TrickGenerator() {
-    const randomFlip = ["","Kickflip ","Varial Flip ","360 Flip ","Hardflip ","360 Hardflip ",
+    const randomFlip = ["Kickflip ","Varial Flip ","360 Flip ","Hardflip ","360 Hardflip ",
     "Heelflip ",
     "Varial Heelflip ",
     "Inward Heelflip ",
