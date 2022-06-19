@@ -61,7 +61,7 @@ const PostDetail = ({ post }) => (
             loader={grpahCMSImageLoader}
             src={post.coverImage.url}
             layout="fill"
-            alt={post.title} 
+            alt={post.title}
             className="absolute h-96 w-full object-cover" />
         </div>
         <div className="px-4 lg:px-0">
@@ -88,6 +88,7 @@ const PostDetail = ({ post }) => (
           {parse(post.content.html, options)}
         </div>
       </div>
+
     </>
   );
 
